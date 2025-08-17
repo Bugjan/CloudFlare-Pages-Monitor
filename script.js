@@ -1,7 +1,7 @@
 const projects = [
   'https://vless.pykgpp.dpdns.org',
   'https://trojan.pykgpp.dpdns.org',
-  'https://bpb3.pykgpp.dpdns.org'
+  'https://bpb3.pykgpp.dpdns.org',
   'https://vless.kann.dpdns.org',
   'https://trojan.kann.dpdns.org',
 ];
