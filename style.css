@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.project {
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #aaa;
+  width: 80%;
+  max-width: 600px;
+}
+
+.available {
+  background-color: #d4f8d4;
+  color: green;
+}
+
+.unavailable {
+  background-color: #f8d4d4;
+  color: red;
+}
