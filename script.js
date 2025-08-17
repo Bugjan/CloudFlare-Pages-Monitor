@@ -29,6 +29,7 @@ async function checkProject(url) {
 async function renderProjects() {
   const container = document.getElementById('projects');
   container.innerHTML = '';
+
   const results = await Promise.all(projects.map(checkProject));
   results.forEach(r => {
     const div = document.createElement('div');
@@ -39,6 +40,11 @@ async function renderProjects() {
     `;
     container.appendChild(div);
   });
+
+  // 更新最後檢測時間
+  const now = new Date();
+  const timeStr = now.toLocaleString('zh-TW', { hour12: false });
+  document.getElementById('last-checked').innerText = `最後檢測時間：${timeStr}`;
 }
 
 // 首次渲染
